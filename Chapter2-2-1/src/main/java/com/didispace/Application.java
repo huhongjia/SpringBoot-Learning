@@ -26,7 +26,6 @@ public class Application {
 
 		// 绑定简单配置
 		FooProperties foo = binder.bind("com.didispace", Bindable.of(FooProperties.class)).get();
-		System.out.println(foo.getFoo());
 
 		// 绑定List配置
 		List<String> post = binder.bind("com.didispace.post", Bindable.listOf(String.class)).get();
